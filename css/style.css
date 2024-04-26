@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.bg-color{
+    border: 1px solid black;
+    background-color: hsla(208, 46%, 30%, 0.221);
+    padding: 1rem;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    min-height: 100vh;
+    color:black;
+    font-weight: 800;
+    background-image: url(../img/sth.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+    margin: 30px;
+    
+    padding: 1rem;
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+
+}
+h1::before,
+h1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h1::before{
+    background: rgb(0, 3, 5);
+    animation: typewriter 2s steps(23) forwards;
+}
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .center {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Styles for screens 992px wide and above */
+    .center {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+.center{
+   text-align: center;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   /* display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 20px; */
+}
+
+nav{
+    display: inline;
+    margin: inline;
+    
+}
+li{
+    list-style: none;
+}
+a{
+   padding: 5px;
+}
+.center{
+    width: 400px;
+    height: auto;
+    display:center;
+    /* float: left; */
+
+}
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+}
+.float{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /* width: 200px;
+    height: auto;
+    */
+}
+.clear{
+    clear: both;
+}
+.font-size{
+    font-size: smaller;
+    color: rgb(226, 11, 58);
+}
+#resize{
+    width: 200px;
+    height: auto;
+}
+table,caption,thead,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+
+.line-height{
+    line-height: 1.5;
+}
+a{
+    color: purple;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    background-color: aliceblue;
+    text-decoration: underline;
+}
+

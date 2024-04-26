@@ -1,0 +1,76 @@
+body {
+    background-color: #00000049; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+a{
+    color: rgb(128, 0, 0);
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    background-color: hsla(210, 7%, 17%, 0.425);
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 1rem;
+    }
+
+    section {
+        margin: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 100px;
+    }
+}

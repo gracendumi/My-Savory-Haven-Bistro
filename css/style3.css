@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   height: 100%;
+   background: linear-gradient(to top, #000508, #0123418b);
+    margin: 50px;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+section{
+    margin: 200px;
+    line-height: 1.5;
+    background-image: url(../img/foodiesfeed.com_pancakes-advertisement.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(63, 29, 5);
+    text-align: center;
+}
+div{
+    border: 2px ;
+    background-color: hsla(60, 85%, 3%, 0.224);
+    padding: 2rem;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.transition{
+    font-size: 1.5rem;
+    color: brown;
+    background-color:hsla(216, 68%, 29%, 0.546) ;
+    border: 5px solid hsla(216, 67%, 25%, 0.817);
+    padding: 0.5rem;
+    
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.transition:hover{
+    transform: translateY(10px) ;
+    background-color: hsla(0, 0%, 96%, 0.311);
+    color: black;
+}
+/* @keyframes slideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.transition{
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s ;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+} */
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0)
+    }
+    20%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px)
+    }
+    50%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+    80%{
+        transform: translateY(0)
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+.bounce{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-delay: 0s;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 1rem;
+    }
+
+    section {
+        margin: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 100px;
+    }
+}
